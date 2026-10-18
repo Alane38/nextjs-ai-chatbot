@@ -9,17 +9,23 @@ export interface Model {
 
 export const models: Array<Model> = [
   {
-    id: 'gpt-4o-mini',
-    label: 'GPT 4o mini',
-    apiIdentifier: 'gpt-4o-mini',
-    description: 'Small model for fast, lightweight tasks',
+    id: 'mistral-small-latest',
+    label: 'Mistral Small',
+    apiIdentifier: 'mistral-small-latest',
+    description: 'Mistral Small is a small language model trained on a mixture of internet text and books.',
   },
   {
-    id: 'gpt-4o',
-    label: 'GPT 4o',
-    apiIdentifier: 'gpt-4o',
-    description: 'For complex, multi-step tasks',
+    id: 'mistral-large-latest',
+    label: 'Mistral Large',
+    apiIdentifier: 'mistral-large-latest',
+    description: 'Mistral Large is a large language model trained on a mixture of internet text and books.',
   },
+  {
+    id: 'pixtral-large-latest',
+    label: 'Pixtral Large',
+    apiIdentifier: 'pixtral-large-latest',
+    description: 'Pixtral Large is a large multimodal model trained on a mixture of internet text and images.',
+  }
 ] as const;
 
-export const DEFAULT_MODEL_NAME: string = 'gpt-4o-mini';
+export const DEFAULT_MODEL_NAME: string = 'mistral-small-latest';
